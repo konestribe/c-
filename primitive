@@ -1,0 +1,41 @@
+
+4. String
+	- charAt -> str[0]	s.at(0)
+	- to_string(<int>)
+	- sort(str.begin(),str.end())		// sort in place
+	- substr(<st idx>, <strlen>)
+	- replace(s.begin(),s.end(), orig, new)
+	- append char
+		- str+=c
+		- s = char(val)+s
+	- check is alpha
+		- isalpha(s[I]).  isalnum(s[I])
+	- convert to lowercase:
+		- tolower(int c) //can be a char
+str.erase(std::remove(str.begin(), str.end(), 'a'), str.end());
+
+
+
+1. Int a[5] = {}    	//initial with 0
+2. fill(a,a+5,-1) 		//fill array with -1
+3. memset(*pt, value, size)
+4. int_64t
+
+
+1. Pointer: Node* left;
+	when called: node.left
+
+* struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+ * };
+2. Math c++
+	- abs: abs
+	- min: min
+	- max:max
+	- INT_MAX,INT_MIN, 
+3. Object & class
+	- Object obj;   	// auto declare space, auto dot
+	- Object* obj = new Object()	// get a pointer, dynamic initialize, must call delete later to release memory, 
