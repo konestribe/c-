@@ -46,7 +46,7 @@ str.erase(std::remove(str.begin(), str.end(), 'a'), str.end());
 2. Math c++
 	- abs: abs
 	- min: min
-	- max:max
+	- max: max
 	- INT_MAX,INT_MIN, 
 3. Object & class
 	- Object obj;   	// auto declare space, auto dot
@@ -87,7 +87,8 @@ str.erase(std::remove(str.begin(), str.end(), 'a'), str.end());
 	   return 0;
 	}
 	
-	
+6. reference in cpp
+	- & means give reference, can modify value outside current scope.
 	
 	
 	
