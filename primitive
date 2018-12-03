@@ -13,6 +13,10 @@
 	- convert to lowercase:
 		- tolower(int c) //can be a char
 str.erase(std::remove(str.begin(), str.end(), 'a'), str.end());
+	- split string:
+		- strtok(char *, char delimit)
+		- returns a pointer to the first token found in the string. 
+		A null pointer is returned if there are no tokens left to retrieve.
 
 
 
@@ -91,6 +95,28 @@ str.erase(std::remove(str.begin(), str.end(), 'a'), str.end());
 	- & means give reference, can modify value outside current scope.
 	
 	
-	
+7. stable_sort()
+	- for some elements, we want the identical value elements to be sorted by original input order. 
+	in these cases we need to use stable_sort
+	- 
+	bool my_cmp(string a, string b) {
+		int idx1 = a.find(' ')+1;
+		int idx2 = b.find(' ')+1;
+		if(!isdigit(a[idx1]) && !isdigit(b[idx2])) {
+		    return a.substr(idx1) < b.substr(idx2);
+		}else{
+		    if(!isdigit(a[idx1])) return true;
+		    return false;
+		}
+	    }
+
+	class Solution {
+	public:
+	    vector<string> reorderLogFiles(vector<string>& logs) {
+		stable_sort(logs.begin(), logs.end(), my_cmp); 
+		return logs;
+	    }
+
+	};
 	
 	
